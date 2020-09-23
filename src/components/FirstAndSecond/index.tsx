@@ -85,6 +85,18 @@ const First: React.FC = () => {
     ['100%', "0%"]
   );
 
+  const formBlockY = useTransform(
+    scrollYProgress,
+    [0.12, 0.14],
+    ["100vh", "0vh"]
+  );
+
+  const formBlockOpacity = useTransform(
+    scrollYProgress,
+    [0.12, 0.135],
+    ['0%', "100%"]
+  );
+
   return (
     <Sticky
       className="first"
@@ -114,6 +126,18 @@ const First: React.FC = () => {
                 <a href="#">Take a peek</a>
               </div>
             </div>
+          </motion.div>
+
+          <motion.div className="form-block" style={{
+            y: formBlockY,
+            opacity: formBlockOpacity
+          }}>
+            <div className="form-block-content">
+              <span>Hi. What's your name?</span>
+
+              <input type="text" name="name" placeholder="Type your answer here..."/>
+            </div>
+
           </motion.div>
 
           <motion.div

@@ -83,6 +83,56 @@ export const Main = styled.main`
                 }
             }
 
+            .form-block {
+                position: absolute;
+                top: 290px;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 1280px;
+                margin: 0px auto;
+
+                .form-block-content {
+                    margin: 0px 60px;
+                    width: 535px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    > span {
+                        font-size: 15px;
+                        line-height: 1.2rem;
+                        color: #262627;
+                    }
+
+                    > input {
+                        font-size: 30px;
+                        line-height: unset;
+                        color: white;
+                        padding: 0px 0px 8px;
+                        margin-top: 32px;
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid rgb(255, 255, 255, 0.4); 
+                        background: transparent;
+
+
+                        &::placeholder {
+                            color: rgb(255, 255, 255, 0.4)
+                        }
+
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid rgb(255, 255, 255); 
+
+                        }
+                    }
+                }
+            }
+
             .left-side {
                 width: 50%;
                 height: 100%;
