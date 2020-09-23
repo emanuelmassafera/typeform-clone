@@ -38,7 +38,7 @@ UI clone da página principal do Typeform, feito com o intuito de aplicar as ani
 ## Layout <a name="-layout" style="text-decoration:none"></a>
 
 <h1 align="center">
-    <img alt="Gif UI Clone" src="./public/UIClone-Twitter.gif" width="650px" />
+    <img alt="Gif UI Clone" src="./public/UI-Clone-Typeform.gif" width="800px" />
 </h1>
 
 ---
