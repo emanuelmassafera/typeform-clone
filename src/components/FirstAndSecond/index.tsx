@@ -73,6 +73,18 @@ const First: React.FC = () => {
     ['0%', '-100%', '-100%', '-200%']
   );
 
+  const heroTitleY = useTransform(
+    scrollYProgress,
+    [0.12, 0.14],
+    ["0vh", "-100vh"]
+  );
+
+  const heroTitleOpacity = useTransform(
+    scrollYProgress,
+    [0.12, 0.135],
+    ['100%', "0%"]
+  );
+
   return (
     <Sticky
       className="first"
@@ -84,13 +96,34 @@ const First: React.FC = () => {
       <motion.div className="offset" style={{
         y: offsetY,
       }}>
+
         <div className="a">
+
+          <motion.div className="hero-title" style={{
+            y: heroTitleY,
+            opacity: heroTitleOpacity
+          }}>
+            <div className="hero-title-content">
+              <h1>People-friendly forms and surveys</h1>  
+
+              <p>Turn a list of questions into a friendly conversation. And get better data.</p>
+
+              <div className="spacer">
+                <button className="secondary">Sign up from free</button>
+
+                <a href="#">Take a peek</a>
+              </div>
+            </div>
+          </motion.div>
+
           <motion.div
             className="left-side"
             style={{
               height: leftSideHeight,
             }}
           />
+
+
 
           <div className="right-side">
             <motion.div

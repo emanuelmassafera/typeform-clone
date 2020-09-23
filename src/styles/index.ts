@@ -17,6 +17,72 @@ export const Main = styled.main`
             display: flex;
             align-items: flex-end;
 
+            position: relative;
+
+            .hero-title {
+                position: absolute;
+                top: 220px;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 1280px;
+                margin: 0px auto;
+
+                .hero-title-content {
+                    margin: 0px 60px;
+                    width: 635px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    > h1 {
+                        font-size: 60px;
+                        font-weight: 300;
+                        line-height: 1.2em;
+                        margin-bottom: 26px;
+                        color: #262627;
+                    }
+
+                    > p {
+                        font-size: 24px;
+                        line-height: 1.4em;
+                        width: 390px;
+                        margin: 0px 0px 20px;
+                    }
+
+                    .spacer {
+                        margin-top: 40px;
+
+                        .secondary {
+                            margin-right: 16px;
+                            padding: 8px 16px;
+                            border: 1px solid rgb(38, 38, 39);
+                            border-radius: 6px;
+                            color: #FFFFFF;
+                            line-height: 24px;
+                            display: inline-block;
+                            background: #262627;
+                            white-space: nowrap;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                        }
+
+                        .secondary:hover {
+                            opacity: 0.7;
+                        }
+
+                        > a {
+                            color: #262627;
+                            margin-left: 32px;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
             .left-side {
                 width: 50%;
                 height: 100%;
