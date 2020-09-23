@@ -7,6 +7,7 @@ const FirstAndSecond: React.FC = () => {
   const { scrollYProgress } = useViewportScroll();
 
   const frameOpacity = useTransform(scrollYProgress, [0.196, 0.198], [0, 1]);
+
   const frameScale = useTransform(
     scrollYProgress,
     [0.558, 0.627],
@@ -15,6 +16,7 @@ const FirstAndSecond: React.FC = () => {
 
   return (
     <Sticky className="second">
+      
       <First />
 
       <motion.div
@@ -63,8 +65,8 @@ const First: React.FC = () => {
 
   const rightSideScale = useTransform(
     scrollYProgress,
-    [0.047, 0.093],
-    [0, 0.511]
+    [0.047, 0.093, 0.198, 0.264],
+    [0, 0.511, 0.511, 1]
   );
 
   const offsetY = useTransform(
@@ -147,8 +149,6 @@ const First: React.FC = () => {
             }}
           />
 
-
-
           <div className="right-side">
             <motion.div
               className="right-image"
@@ -158,9 +158,27 @@ const First: React.FC = () => {
               }}
             />
           </div>
+
         </div>
 
-        <div className="b"></div>
+        <div className="b">
+          <div className="left-side">
+
+            <div className="content">
+              <span>Do you like this photograph?</span>
+
+              <div className="select">
+                <a href="#">Yes</a>
+                <a href="#">No</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="right-side">
+            <div className="right-image"></div>
+          </div>
+        </div>
 
         <div className="c"></div>
       </motion.div>

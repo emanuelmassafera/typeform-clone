@@ -4,11 +4,11 @@ import GlobalStyles from "./styles/GlobalStyles";
 import {
   Main,
   Section,
-  Sticky
 } from './styles';
 
 import FirstAndSecond from "./components/FirstAndSecond";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   React.useEffect(() => {
@@ -23,25 +23,15 @@ function App() {
 
       <Main style={{ height: "1610vh" }}>
 
-        <Section style={{ height: "72.7%" }}>
+        <Section style={{ height: "95%" }}>
 
           <FirstAndSecond />
 
         </Section>
 
-        <Section style={{ height: "9.7%" }}>
-
-          <Sticky className="third" />
-
-        </Section>
-
-        <Section style={{ height: "10.1%" }}>
-
-          <Sticky className="fourth" />
-
-        </Section>
-
       </Main>
+
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Main = styled.main`
     .first {
-        background: red;
+        background: #f5f1ea;
         overflow: hidden;
 
         .offset {
@@ -145,6 +145,10 @@ export const Main = styled.main`
 
                 .right-image {
                     background: #7dbb91;
+                    background-image: url('https://images.unsplash.com/photo-1600789385431-f0f6b9b56272?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: contain;
                     width: 100%;
                     height: 100%;
                 }
@@ -155,27 +159,78 @@ export const Main = styled.main`
             background: #582534;
             width: 100%;
             height: 100%;
+            display: flex;
+            
+            .left-side {
+                width: 50%;
+                height: 100%;
+                background: #582534;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .content {
+                    > span {
+                        font-size: 18px;
+                        line-height: 1.2rem;
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+
+                    .select {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 24px;
+
+                        > a {
+                            color: rgba(255, 255, 255, 0.9);
+                            font-size: 20px;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 8px 8px;
+                            background: rgba(255, 255, 255, 0.1);
+                            border: 1px solid rgba(255, 255, 255, 0.9); 
+                            border-radius: 2px;
+                            cursor: pointer;
+                        }
+
+                        > a:last-child {
+                            border-top: none;
+                        }
+                    }
+
+                }
+            }
+
+            .right-side {
+                width: 50%;
+                height: 100%;
+
+                .right-image {
+                    background: #582534;
+                    background-image: url('https://images.unsplash.com/photo-1557176529-ca2474ad7495?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
 
         .c {
             background: #0a7397;
+            background-image: url('https://media.giphy.com/media/h2f2Ef7sC23JN5lFsp/giphy.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             width: 100%;
             height: 100%;
         }
     }
 
     .second {
-        background: green;
-
-    }
-
-    .third {
-        background: yellow;
-        
-    }
-
-    .fourth {
-        background: blue;
+        background: #FFFFFF;
     }
 `;
 
