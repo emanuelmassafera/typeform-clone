@@ -21,7 +21,7 @@ Tabela de conteúdos
 
 ## Sobre o projeto <a name="-sobre-o-projeto" style="text-decoration:none"></a>
 
-UI clone da página principal do Typeform, feito com o intuito de aplicar as animações presentes através da biblioteca Framer Motion. Desenvolvido com a Rocketseat. 
+UI clone da página inicial do Typeform, feito com o intuito de aplicar as animações presentes através da biblioteca Framer Motion. Desenvolvido com a Rocketseat. 
 
 ---
 
