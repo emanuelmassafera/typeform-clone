@@ -8,11 +8,18 @@ import {
 } from './styles';
 
 import FirstAndSecond from "./components/FirstAndSecond";
+import Header from "./components/Header";
 
 function App() {
+  React.useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <>
       <GlobalStyles />
+
+      <Header />
 
       <Main style={{ height: "1610vh" }}>
 

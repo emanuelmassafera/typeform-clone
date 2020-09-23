@@ -7,7 +7,8 @@ export const Main = styled.main`
         overflow: hidden;
 
         .offset {
-
+            width: 100%;
+            height: 100%;
         }
 
         .a {
